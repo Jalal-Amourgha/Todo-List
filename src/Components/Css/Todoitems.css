@@ -1,0 +1,26 @@
+.todoitems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  display: flex;
+}
+
+p {
+  color: white;
+  min-width: 245px;
+  overflow-wrap: break-word;
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through 3px solid;
+}
