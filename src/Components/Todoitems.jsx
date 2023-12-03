@@ -1,3 +1,5 @@
+import React from "react";
+
 const Todoitems = ({ no, display, text, setTodos }) => {
   const remove = (no) => {
     let data = JSON.parse(localStorage.getItem("todos"));
