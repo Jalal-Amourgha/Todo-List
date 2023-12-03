@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from "react";
-import "./Css/Todo.css";
 import Todoitems from "./Todoitems";
 
 let count = 0;
@@ -41,11 +40,10 @@ const Todo = () => {
 
   return (
     <div className="todo">
-      <div className="todo-header">To-Do List</div>
+      <h1>To-Do List</h1>
       <div className="todo-add">
         <input
           ref={inputRef}
-          className="todo-input"
           type="text"
           placeholder=" Add Your Task "
           onKeyDown={handleEnterKeyPress}
@@ -54,7 +52,6 @@ const Todo = () => {
           onClick={() => {
             add();
           }}
-          className="todo-add-btn"
         >
           Add
         </button>

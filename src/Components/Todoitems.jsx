@@ -1,6 +1,3 @@
-import "./Css/Todoitems.css";
-import x from "./Assets/x.png";
-
 const Todoitems = ({ no, display, text, setTodos }) => {
   const remove = (no) => {
     let data = JSON.parse(localStorage.getItem("todos"));
@@ -27,16 +24,19 @@ const Todoitems = ({ no, display, text, setTodos }) => {
 
   return (
     <div className="todoitems">
-      <p className={`${display}`} onClick={() => toggle(no)}>
-        {text}
-      </p>
+      <div className="paraghraph-box">
+        <i
+          className={`${
+            display === "" ? "fa-regular" : "fa-solid"
+          } fa-square-check`}
+          onClick={() => toggle(no)}
+        ></i>
 
-      <img
-        className="todoitems-x-icon"
-        onClick={() => remove(no)}
-        src={x}
-        alt=""
-      />
+        <p className={`${display}`}>{text}</p>
+      </div>
+      <div className="icon-box">
+        <i className="fa-solid fa-square-xmark" onClick={() => remove(no)}></i>
+      </div>
     </div>
   );
 };
