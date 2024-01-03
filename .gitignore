@@ -22,21 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Dependency directories
-/node_modules
-
-# Build files
-/build
-/dist
-/out
-
-# Environment files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Editor files
-.vscode
-.idea
